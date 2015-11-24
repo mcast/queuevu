@@ -15,7 +15,7 @@ define(function (require) {
 
    system.debug(true);
 
-   app.title = 'Durandal Starter Kit';
+   app.title = 'QueueVue bus queue counter';
 
    app.configurePlugins({
      router:true,
