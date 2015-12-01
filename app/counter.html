@@ -1,13 +1,16 @@
-<section>
-<h2>QueueVue: counter</h2>
-<div class="row-fluid">
-  <form class="form-inline">
+<section class="counter">
+<h1>QueueVue</h1><h2>Counter</h2>
+<form class="form-inline">
+<div id="btnBox">
+  <button type="submit" class="btn countBtn" data-bind="click: countUp"> + </button> <br />
+  <button type="submit" class="btn countBtn" data-bind="click: countDown" id="down"> - </button>
+</div>
+<div id="countBox">
   <fieldset>
   <label>Count</label>
-  <input type="text" data-bind="value: count, valueUpdate: 'afterkeydown'"/>
-  <button type="submit" class="btn" data-bind="click: countUp"> + </button>
-  <button type="submit" class="btn" data-bind="click: countDown"> - </button>
+  <input type="text" maxlength="3" id="count" data-bind="value: count, valueUpdate: 'afterkeydown'"/>
   </fieldset>
-  </form>
 </div>
+</form>
+<br /><div id=info> </div>
 </section>

@@ -1,5 +1,7 @@
 ﻿requirejs.config({
-  paths: {
+    urlArgs: "bust=" +  (new Date()).getTime(),
+//    urlArgs: "version=0.0.1",
+    paths: {
     'text': '../lib/require/text',
     'durandal':'../lib/durandal/js',
     'plugins' : '../lib/durandal/js/plugins',
@@ -13,7 +15,12 @@ define(function (require) {
    var system = require('durandal/system'),
        app = require('durandal/app');
 
+   // debug stuff. thanks https://github.com/BlueSpire/Durandal/issues/466
+   //>>excludeStart("build", pragmas.build);
    system.debug(true);
+   // window.onerror .. ?
+   require('durandal/binder').throwOnErrors = true;
+   //>>excludeEnd("build");
 
    app.title = 'QueueVue bus queue counter';
 

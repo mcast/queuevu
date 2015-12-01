@@ -1,0 +1,50 @@
+
+.navbar-fixed-top { right: 80% }
+
+section.counter {
+    position: absolute;
+    left: 0%;
+    right: 80%;
+}
+
+section.counter label { display: none }
+
+section.counter #btnBox, section.counter #countBox {
+    position: fixed;
+    height: 90%;
+    top: 16px;
+    border: none;
+}
+
+section.counter #btnBox {
+    width: 20%;
+    right: 0;
+}
+
+section.counter #countBox {
+    width: 60%;
+    right: 20%;
+    background: green;
+}
+
+section.counter #btnBox .btn {
+    position: absolute;
+    height: 49%;
+    width: 94%;
+    left: 2%;
+    font-size: 24;
+    line-height: 0.8;
+}
+section.counter #btnBox .btn#down {
+    bottom: 0%;
+}
+
+#count {
+    font-size: 24;
+    text-align: right;
+    line-height: 1.0;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
